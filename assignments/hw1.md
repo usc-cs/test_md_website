@@ -10,7 +10,7 @@ nav: assignments
 + Directory name for this homework (case sensitive): `hw1`
 
 ###Problem 1 (Course Policies, 15%)
-Carefully study the information on the [course web site]({{ site.data.main.url }}/index.html), then answer the following questions about course policies:
+Carefully study the information on the [course web site]({{ site.url }}/index.html), then answer the following questions about course policies:
 
 ####Part (a): 
 Which of the following are acceptable behaviors in solving homeworks/projects?

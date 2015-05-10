@@ -7,7 +7,7 @@ nav: assignments
 ##Assignments
 Homework will be assigned roughly once per week. It will be graded, and require substantial work. The average student should expect to spend about 15 hours per homework. Homeworks will typically contain a mix of programming exercises and "theory" questions about data structures and their implementation. Roughly every third homework will contain a piece that contributes toward the class project, which is to build a simpler version of Netflix from scratch. As the project progresses, students may find it necessary to revisit and improve their earlier solutions, so good coding practices and documentation are strongly encouraged.
 
-For detailed information on late submission policies, grace periods, and similar questions about assignments, check the [grading page]({{ site.data.main.url }}/grading.html).
+For detailed information on late submission policies, grace periods, and similar questions about assignments, check the [grading page]({{ site.url }}/grading.html).
 
 Homeworks will from time to time contain "chocolate problems". Chocolate problems do not affect your grade in the course. They are intended to be significantly more challenging, for students looking for a challenge. Chocolate problems will be marked with a number of chocolate bars. Solutions that are (mostly) correct will lead to the solvers getting that number of chocolate bars. Chocolate problems can be solved in groups of up to 3 students (who will then share the chocolate). Chocolate problem submissions should be separate from the rest of the homework, and should be e-mailed directly to your instructor, as they will be graded by the instructor, not the TAs/graders. Feel free to mark your preferred type of chocolate with your submission, though we won't promise that we will meet all requests.
 
@@ -17,19 +17,19 @@ Each student will receive a private code repository on the course's [GitHub Orga
 
 |                      HW                          |           Topic                             |                Due Date                  |
 | :----------------------------------------------: | :-----------------------------------------: | :-------------------------------------:  |
-| [**HW01**]({{ site.data.main.url }}/assignments/hw1.html)  | Course Overview and Review                  | Fri. Sept. 5, 2014 @ 11:59PM (PST)        |
-| [**HW02**]({{ site.data.main.url }}/assignments/hw2.html)  | Recursion, git, makefiles                  | Fri. Sept. 12, 2014 @ 11:59AM (PST)
-| [**HW03**]({{ site.data.main.url }}/assignments/hw3.html)  | Linked Lists, ADTs, Map, Set               | Fri. Sept. 19, 2014 @ 11:59AM (PST)        |
-| [Project, Part 1]({{ site.data.main.url }}/assignments/hw4.html)  | Part 1 of Project  | Wed. Oct. 1, 2014 @ 11:59AM (PST)        |
-| [**HW05**]({{ site.data.main.url }}/assignments/hw5.html)  | Stacks, Running Time, Inheritance           | Thu. Oct. 09, 2014 @ 11:59PM Midnight (PST)        |
-| [Project, Part 2]({{ site.data.main.url }}/assignments/hw6.html)  | Part 2 of Project  | Wed. Oct. 29, 2014 @ 11:59PM (PST, midnight)        |
-| [Project, Part 3]({{ site.data.main.url }}/assignments/hw7.html)  | Part 3 of Project  | Fri. Nov. 07, 2014 @ 11:59PM (PST, midnight)        |
-| [**HW08**]({{ site.data.main.url }}/assignments/hw8.html)  | Sorting, Runtime Analysis, Recursion, Searching, Heaps | Sun. Nov. 16, 2014 @ 11:59PM (PST, midnight)        |
-| [**HW09**]({{ site.data.main.url }}/assignments/hw9.html)  | Search Trees, Graph Search | Wed. Nov. 26, 2014 @ 11:59PM (PST, midnight)        |
-| [Project, Part 4]({{ site.data.main.url }}/assignments/hw10.html)  | Part 4 of Project | Mon. Dec. 8, 2014 @ 11:59PM (PST, midnight)        |
+| [**HW01**]({{ site.url }}/assignments/hw1.html)  | Course Overview and Review                  | Fri. Sept. 5, 2014 @ 11:59PM (PST)        |
+| [**HW02**]({{ site.url }}/assignments/hw2.html)  | Recursion, git, makefiles                  | Fri. Sept. 12, 2014 @ 11:59AM (PST)
+| [**HW03**]({{ site.url }}/assignments/hw3.html)  | Linked Lists, ADTs, Map, Set               | Fri. Sept. 19, 2014 @ 11:59AM (PST)        |
+| [Project, Part 1]({{ site.url }}/assignments/hw4.html)  | Part 1 of Project  | Wed. Oct. 1, 2014 @ 11:59AM (PST)        |
+| [**HW05**]({{ site.url }}/assignments/hw5.html)  | Stacks, Running Time, Inheritance           | Thu. Oct. 09, 2014 @ 11:59PM Midnight (PST)        |
+| [Project, Part 2]({{ site.url }}/assignments/hw6.html)  | Part 2 of Project  | Wed. Oct. 29, 2014 @ 11:59PM (PST, midnight)        |
+| [Project, Part 3]({{ site.url }}/assignments/hw7.html)  | Part 3 of Project  | Fri. Nov. 07, 2014 @ 11:59PM (PST, midnight)        |
+| [**HW08**]({{ site.url }}/assignments/hw8.html)  | Sorting, Runtime Analysis, Recursion, Searching, Heaps | Sun. Nov. 16, 2014 @ 11:59PM (PST, midnight)        |
+| [**HW09**]({{ site.url }}/assignments/hw9.html)  | Search Trees, Graph Search | Wed. Nov. 26, 2014 @ 11:59PM (PST, midnight)        |
+| [Project, Part 4]({{ site.url }}/assignments/hw10.html)  | Part 4 of Project | Mon. Dec. 8, 2014 @ 11:59PM (PST, midnight)        |
   
 ###Submission Instructions
-In order to properly submit your assignment, please follow the course [submission instructions]({{ site.data.main.url }}/assignments/submission-instructions.html)
+In order to properly submit your assignment, please follow the course [submission instructions]({{ site.url }}/assignments/submission-instructions.html)
 
 ###Rubric
 Each homework assignment generally asks for a set of features to be

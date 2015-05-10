@@ -1,5 +1,4 @@
-# Warning: You probably should not touch these files
-
+url: 'http://localhost:4000'
 timezone: America/Los_Angeles
 markdown: redcarpet
 redcarpet:
