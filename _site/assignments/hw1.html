@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://localhost:4000/style/style.css" />
+	<link rel="stylesheet" href="http://localhost:4000/style/pygments.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no" />
+	<meta charset="UTF-8">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script src="http://localhost:4000/js/jquery-scrolltofixed-min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#sidebar').scrollToFixed( { 
+		    	marginTop: 70,
+		    	fixed: function() { $(this).css("box-sizing", "inherit"); },
+		    	unfixed: function() { $(this).css("box-sizing", "border-box"); }
+		    });
+		});
+	</script>
+	<title>CSCI 104 &ndash; Homework 1</title>
+</head>
+<!--
+<body><p>Regex Trap for ITS Disclaimer</p></body>
+-->
+<body>
+	<div id="top_bar">
+		<div class="center">
+			<div id="logo_wrapper">
+				<a href="http://usc.edu"><div id="logo"></div></a>
+			</div>
+		</div>
+	</div>
+	<header>	
+		<div class="center">
+			<h1>
+				<span>CSCI 104 - Spring 2015</span>
+				Data Structures and Object Oriented Design
+			</h1>
+		</div>
+	</header>
+	<div id="content" class="center">
+
+	<div id="main">
+		<h2 id="homework-1">Homework 1</h2>
+
+<ul>
+<li>Due: Sept. 5, 2014, 11:59am (PST)</li>
+<li>Directory name for this homework (case sensitive): <code>hw1</code></li>
+</ul>
+
+<h3 id="problem-1-(course-policies,-15%)">Problem 1 (Course Policies, 15%)</h3>
+
+<p>Carefully study the information on the <a href="http://localhost:4000/index.html">course web site</a>, then answer the following questions about course policies:</p>
+
+<h4 id="part-(a):">Part (a):</h4>
+
+<p>Which of the following are acceptable behaviors in solving homeworks/projects?</p>
+
+<ol>
+<li>Looking up information relevant to the course online.</li>
+<li>Looking up or asking for sample solutions online.</li>
+<li>Talking to my classmates about the problems.</li>
+<li>Copying code from my classmates, and then editing it significantly.</li>
+<li>Asking the course staff for help.</li>
+<li>Sharing my code with a classmate.</li>
+</ol>
+
+<h4 id="part-(b):">Part (b):</h4>
+
+<p>Which of the following are recommended ways of writing code?</p>
+
+<ol>
+<li>gedit</li>
+<li>emacs</li>
+<li>Eclipse</li>
+<li>vim</li>
+<li>Microsoft Visual Studio</li>
+<li>notepad</li>
+</ol>
+
+<h4 id="part(c):">Part(c):</h4>
+
+<p>What is the late submission policy?</p>
+
+<ol>
+<li>One hour late submission still yields full credit for each assignment.</li>
+<li>Each assignment can be submitted up to three days late for 50% credit.</li>
+<li>Each student can submit up to 3 homeworks a day late for full credit.</li>
+<li>Students need to get an approval before submitting an assignment late.</li>
+</ol>
+
+<h4 id="part-(d):">Part (d):</h4>
+
+<p>Is there a grace period to submit assignments?</p>
+
+<ol>
+<li>No</li>
+<li>There is an hour grace period per assignment for 50% credit.</li>
+<li>Yes, but only if there is a technical difficulty with submission.</li>
+<li>There is a day grace period upon approval.</li>
+</ol>
+
+<h4 id="part-(e):">Part (e):</h4>
+
+<p>Which C++ compiler do you have to use?</p>
+
+<ol>
+<li>I have to use g++.</li>
+<li>I can use any compiler I want, so long as it works on my machine.</li>
+<li>I can use any compiler I want, but the submission has to work with g++ on the course VM in the end.</li>
+</ol>
+
+<h3 id="problem-2-(git,-15%)">Problem 2 (Git, 15%)</h3>
+
+<p>Carefully review and implement the steps discussed in <a href="#">Lab1</a>. Then, answer the following questions:</p>
+
+<h4 id="part-(a):">Part (a):</h4>
+
+<p>Which of the following git user interfaces are accepted and supported in this course?</p>
+
+<ol>
+<li>Git Bash (Windows)</li>
+<li>GitHub Desktop Client</li>
+<li>Terminal (Mac or Linux)</li>
+<li>Eclipse eGit</li>
+<li>Tower Git Client</li>
+</ol>
+
+<h4 id="part-(b):">Part (b):</h4>
+
+<p>Provide the appropriate git command to perform the following operations:</p>
+
+<ol>
+<li>Stage an untracked file to be committed. The file is called &#39;hw1q2b.cpp&#39;.</li>
+<li>Display the details of the last three commits in the repository.</li>
+</ol>
+
+<h4 id="part-(c)">Part (c)</h4>
+
+<p>Let&#39;s say you staged three files to be committed. Then, you ran the following command: </p>
+
+<p><code>git commit</code></p>
+
+<p>What will git do?</p>
+
+<h3 id="problem-3-(review-material)">Problem 3 (Review Material)</h3>
+
+<p>Carefully review recursion and dynamic memory management from your CSCI 103 notes and textbook. You may also find Chapters 2 and 5 from the textbook, and the C++ Interlude 2, helpful.</p>
+
+<h3 id="problem-4-(strings-and-streams,-dynamic-memory,-30%)">Problem 4 (Strings and Streams, Dynamic Memory, 30%)</h3>
+
+<p>Write a program that reads in a text file and outputs, for each line, the number of words on that line. However, it will have to do this in reverse order of the lines. The program must get the name of the text file as a command line argument; do not hard-code the filename, and do not ask the user with <code>cin</code> or <code>scanf</code>. </p>
+
+<p>For the text file, the first line contains the number of lines in the file; let&#39;s call it n. This will be followed by n lines. Each line has at most 80 characters, which will be only letters (upper or lower case) and white spaces (space, tab, newline). A line may contain many words. Two words are separated by any white space character. </p>
+
+<p>We will not give you an upper bound on n, and you should not hard-code one. Nor can you use types such as <code>vector</code> or <code>list</code> from the STL. In other words, you must use your own dynamically allocated memory to solve this problem.</p>
+
+<p>The following is a sample input and output of the program.</p>
+
+<ul>
+<li>Input text file: hw1q4.txt</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">3
+Hello World
+I have four     words
+But I have   five  words
+</code></pre></div>
+<ul>
+<li>Compiling the program</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; g++ -g hw1q4.cpp -o hw1q4
+</code></pre></div>
+<ul>
+<li>Running the program and the output</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; ./hw1q4 hw1q4.txt
+5
+4
+2
+</code></pre></div>
+<p>As you can see from the sample, the text file has the number 3 as the first line, which indicates there are three text lines in the file. The program is printing the number of words in each line in reverse. It is initially printing the number of words in the last line and so on.</p>
+
+<p><strong>Hint</strong>: In order to read the filename as a command line argument in C++, you need to use a slightly different syntax for your <code>main</code> function: <code>int main (int argc, char * argv[])</code>. Here, <code>argc</code> is the total number of arguments that the program was given, and <code>argv</code> is an array of strings, the parameters the program was passed. <code>argv[0]</code> is always the name of your program, and <code>argv[1]</code> is the first argument. </p>
+
+<h3 id="problem-5-(dynamic-memory,-strings,-40%)">Problem 5 (Dynamic Memory, Strings, 40%)</h3>
+
+<p>In this problem, we consider a bunch of buckets, each of which contains a sequence of integers. You have three operations: (1) empty a bucket, (2) put a new sequence of integers into an empty bucket, and (3) output the content of a bucket. What makes this non-trivial is that you will only be given the number of buckets at run time, and the sequences of integers will also have different lengths that you only find out when you read the input file. </p>
+
+<p>The input file should have the following format: the first line contains two numbers <var>b</var> and <var>c</var>. <var>b</var> is the number of buckets, and <var>c</var> is the number of commands in the sequence. We will not give you upper bounds on either of those numbers. All buckets start empty. Next, we have <var>c</var> lines. Each line contains one of the following three commands:</p>
+
+<ol>
+<li><code>EMPTY i</code>: This commands empties bucket <var>i</var>. If there is no bucket <var>i</var>, then it outputs an error <code>Error - bucket i does not exist</code>.</li>
+<li><code>PUT i k n1 n2 n3 ... nk</code>: This commands puts the integer sequence <var>n1</var> <var>n2</var> ... <var>nk</var> into bucket <var>i</var> if bucket <var>i</var> is empty right now; if bucket <var>i</var> is not empty, it outputs an error message <code>Error - bucket i is not empty</code> instead. The number <var>k</var> of entries in the sequence will always be at least 1. If bucket <var>i</var> does not exist, then it outputs an error.</li>
+<li><code>OUTPUT i</code>: Outputs the current content of bucket <var>i</var>. If bucket <var>i</var> does not exist, then it outputs an error.</li>
+</ol>
+
+<p>In your solution, you cannot use any STL functionality, in particular, you cannot use the <code>vector</code>, <code>deque</code>, or <code>list</code> data types. Instead, you should be using <code>int</code> and pointers, and dynamically allocate and deallocate memory. A very important part of this assignment is to make sure that your solution does not leak memory. You will lose significant points for memory leaks.</p>
+
+<p>Example:</p>
+
+<ul>
+<li>Input text file: hw1q5.txt</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">3 10
+PUT   1 4 6 2 2 3
+PUT 1   2 5 7
+PUT 3  1 0
+OUTPUT   1
+EMPTY  1
+PUT 1   2 5 7
+OUTPUT  0
+OUTPUT  1
+OUTPUT 2 
+OUTPUT     3
+</code></pre></div>
+<ul>
+<li>Compiling the program:</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; g++ -g hw1q5.cpp -o hw1q5
+</code></pre></div>
+<p>Running the program:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; ./hw1q5 hw1q5.txt
+Error - bucket 1 is not empty
+6 2 2 3
+Error - bucket 0 does not exist
+5 7
+empty
+0
+</code></pre></div>
+	</div>
+
+<div id="sidebar">
+	<nav><ul>
+		
+			
+				<a href="http://localhost:4000/index.html"
+				>
+					<li>Home</li>
+				</a>
+			
+			
+		
+			
+				<a href="http://localhost:4000/assignments"
+				 class="active" >
+					<li>Assignments</li>
+				</a>
+			
+			
+		
+			
+				<a href="http://peetahzee.com"><li>Some Really Cool External Website</li></a>
+			
+			
+		
+		
+	</ul></nav>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43261206-2', 'usc.edu');
+  ga('send', 'pageview');
+
+</script>
+
+		<div class="clear"></div>
+		<footer>
+			<div class="left">&nbsp;</div>
+			<div class="right">USC > UCLA Muahaha</div>
+			<div class="clear"></div>
+		</footer>
+
+	</div>
+</body>
+

@@ -1,0 +1,8 @@
+course_name: 'Data Structures and Object Oriented Design'
+course_code: 'CSCI 104'
+course_sem: 'Spring 2015'
+footer_notice: 'USC > UCLA Muahaha'
+
+# url: 'http://www-scf.usc.edu/~csci104'
+# UNCOMMENT NEXT LINE FOR DEV
+url: 'http://localhost:4000'

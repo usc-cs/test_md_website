@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://localhost:4000/style/style.css" />
+	<link rel="stylesheet" href="http://localhost:4000/style/pygments.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no" />
+	<meta charset="UTF-8">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script src="http://localhost:4000/js/jquery-scrolltofixed-min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#sidebar').scrollToFixed( { 
+		    	marginTop: 70,
+		    	fixed: function() { $(this).css("box-sizing", "inherit"); },
+		    	unfixed: function() { $(this).css("box-sizing", "border-box"); }
+		    });
+		});
+	</script>
+	<title>CSCI 104 &ndash; Assignments</title>
+</head>
+<!--
+<body><p>Regex Trap for ITS Disclaimer</p></body>
+-->
+<body>
+	<div id="top_bar">
+		<div class="center">
+			<div id="logo_wrapper">
+				<a href="http://usc.edu"><div id="logo"></div></a>
+			</div>
+		</div>
+	</div>
+	<header>	
+		<div class="center">
+			<h1>
+				<span>CSCI 104 - Spring 2015</span>
+				Data Structures and Object Oriented Design
+			</h1>
+		</div>
+	</header>
+	<div id="content" class="center">
+
+	<div id="main">
+		<h2 id="assignments">Assignments</h2>
+
+<p>Homework will be assigned roughly once per week. It will be graded, and require substantial work. The average student should expect to spend about 15 hours per homework. Homeworks will typically contain a mix of programming exercises and &quot;theory&quot; questions about data structures and their implementation. Roughly every third homework will contain a piece that contributes toward the class project, which is to build a simpler version of Netflix from scratch. As the project progresses, students may find it necessary to revisit and improve their earlier solutions, so good coding practices and documentation are strongly encouraged.</p>
+
+<p>For detailed information on late submission policies, grace periods, and similar questions about assignments, check the <a href="http://localhost:4000/grading.html">grading page</a>.</p>
+
+<p>Homeworks will from time to time contain &quot;chocolate problems&quot;. Chocolate problems do not affect your grade in the course. They are intended to be significantly more challenging, for students looking for a challenge. Chocolate problems will be marked with a number of chocolate bars. Solutions that are (mostly) correct will lead to the solvers getting that number of chocolate bars. Chocolate problems can be solved in groups of up to 3 students (who will then share the chocolate). Chocolate problem submissions should be separate from the rest of the homework, and should be e-mailed directly to your instructor, as they will be graded by the instructor, not the TAs/graders. Feel free to mark your preferred type of chocolate with your submission, though we won&#39;t promise that we will meet all requests.</p>
+
+<p>Each student will receive a private code repository on the course&#39;s <a href="https://github.com/usc-csci104-fall2014">GitHub Organization</a> to use it for the development and submission of all assignments. You will be using the <a href="http://git-scm.com/">git</a> source code management tool to maintain your homework code. </p>
+
+<h3 id="hw-schedule">HW Schedule</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">HW</th>
+<th style="text-align: center">Topic</th>
+<th style="text-align: center">Due Date</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw1.html"><strong>HW01</strong></a></td>
+<td style="text-align: center">Course Overview and Review</td>
+<td style="text-align: center">Fri. Sept. 5, 2014 @ 11:59PM (PST)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw2.html"><strong>HW02</strong></a></td>
+<td style="text-align: center">Recursion, git, makefiles</td>
+<td style="text-align: center">Fri. Sept. 12, 2014 @ 11:59AM (PST)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw3.html"><strong>HW03</strong></a></td>
+<td style="text-align: center">Linked Lists, ADTs, Map, Set</td>
+<td style="text-align: center">Fri. Sept. 19, 2014 @ 11:59AM (PST)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw4.html">Project, Part 1</a></td>
+<td style="text-align: center">Part 1 of Project</td>
+<td style="text-align: center">Wed. Oct. 1, 2014 @ 11:59AM (PST)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw5.html"><strong>HW05</strong></a></td>
+<td style="text-align: center">Stacks, Running Time, Inheritance</td>
+<td style="text-align: center">Thu. Oct. 09, 2014 @ 11:59PM Midnight (PST)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw6.html">Project, Part 2</a></td>
+<td style="text-align: center">Part 2 of Project</td>
+<td style="text-align: center">Wed. Oct. 29, 2014 @ 11:59PM (PST, midnight)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw7.html">Project, Part 3</a></td>
+<td style="text-align: center">Part 3 of Project</td>
+<td style="text-align: center">Fri. Nov. 07, 2014 @ 11:59PM (PST, midnight)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw8.html"><strong>HW08</strong></a></td>
+<td style="text-align: center">Sorting, Runtime Analysis, Recursion, Searching, Heaps</td>
+<td style="text-align: center">Sun. Nov. 16, 2014 @ 11:59PM (PST, midnight)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw9.html"><strong>HW09</strong></a></td>
+<td style="text-align: center">Search Trees, Graph Search</td>
+<td style="text-align: center">Wed. Nov. 26, 2014 @ 11:59PM (PST, midnight)</td>
+</tr>
+<tr>
+<td style="text-align: center"><a href="http://localhost:4000/assignments/hw10.html">Project, Part 4</a></td>
+<td style="text-align: center">Part 4 of Project</td>
+<td style="text-align: center">Mon. Dec. 8, 2014 @ 11:59PM (PST, midnight)</td>
+</tr>
+</tbody></table>
+
+<h3 id="submission-instructions">Submission Instructions</h3>
+
+<p>In order to properly submit your assignment, please follow the course <a href="http://localhost:4000/assignments/submission-instructions.html">submission instructions</a></p>
+
+<h3 id="rubric">Rubric</h3>
+
+<p>Each homework assignment generally asks for a set of features to be
+implemented in C++. It also usually asks students to specifically
+either use or not use some STL classes. Based on these requirements,
+each assignment is going to have its own grading rubric. We also have
+a general rubric which you need to consider for <em>all</em> assignments;
+this captures issues that will be common to most of your projects,
+like quality of your code. </p>
+
+<h4 id="general-rubric">General Rubric</h4>
+
+<p><strong>Coding problems</strong></p>
+
+<ul>
+<li>Up to 3% deduction for using global variables inappropriately or extensively in your program.</li>
+<li>Up to 5% deduction if your code compiles with warnings. It depends on the number of warnings and their severity. In order to see the compiler warnings, you need to compile with the <code>-Wall</code> switch. For example <code>g++ hw1.cpp -Wall -g -o hw1</code>. If you believe the warnings are unavoidable document it in your README file.</li>
+<li>Up to 5% if you do not use command line arguments correctly (hard code or use cin).</li>
+<li>Up to 3% deduction for each compiler error depending on the severity of mistake.</li>
+<li>Up to 10% deduction for bad Makefile (once Makefiles are taught).</li>
+<li>Up to 20% deduction for bad coding practices, code organization, indentation, naming, code file and header separation, code documentation, throwing non-exception types, etc.</li>
+<li>Up to 10% deduction for repo organization, garbage files in repo, folder organization, repeated code files, missing data files, missing README file, etc.</li>
+<li>Up to 10% deduction if your program is testable but crashes during execution, leaks memory, or is considerably slow. Depending on the nature of the assignment, you may lose more points if your program is slow or not scalable.</li>
+<li>If one of the features of an assignment is not testable because it has major compile errors, you will likely lose at least half its points in addition to other coding mistakes. For example if we cannot test one of your data structure functions because it is missing the UI section (main function) or it has major compile errors, then the best we can do is to look at your code and see if it would work or not. In this scenario, we can give you at most half the points for that data structure function.</li>
+<li>Similar to the previous rule, if your project is missing a key feature such that testing many other features depends on it, you will likely lose a lot of points. For example, imagine that your assignment is supposed to read data from a file and then process. If you finish the processing part and leave out the file I/O part, you are making it very difficult to test your project. If you want to leave out the file I/O (maybe because you do not have time), change your main function so that it generates some data (like an initial array) just to test the rest of your assignment. This actually makes it easier for yourself to test your assignment as you build. If you want to learn more about this, look up <em>unit testing</em>.</li>
+</ul>
+
+<p><strong>Multiple choice problems</strong></p>
+
+<ul>
+<li>If you miss 1 on a problem of several possible answers, you get 50%.</li>
+<li>If you miss more than 1 on a problem with multiple correct answer, you get 0.</li>
+<li>If you miss the 1 right answer (if there&#39;s only 1 correct answer), you get 0.</li>
+</ul>
+
+	</div>
+
+<div id="sidebar">
+	<nav><ul>
+		
+			
+				<a href="http://localhost:4000/index.html"
+				>
+					<li>Home</li>
+				</a>
+			
+			
+		
+			
+				<a href="http://localhost:4000/assignments"
+				 class="active" >
+					<li>Assignments</li>
+				</a>
+			
+			
+		
+			
+				<a href="http://peetahzee.com"><li>Some Really Cool External Website</li></a>
+			
+			
+		
+		
+	</ul></nav>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43261206-2', 'usc.edu');
+  ga('send', 'pageview');
+
+</script>
+
+		<div class="clear"></div>
+		<footer>
+			<div class="left">&nbsp;</div>
+			<div class="right">USC > UCLA Muahaha</div>
+			<div class="clear"></div>
+		</footer>
+
+	</div>
+</body>
+
